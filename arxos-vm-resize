@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+ARXOS_VERSION="0.0.1"   # ARXOS: every tool pinned to 0.0.1
+case "${1:-}" in --version|-V) echo "arxos-vm-resize ${ARXOS_VERSION} (ARXOS)"; exit 0 ;; esac
 # arxos-vm-resize - start the correct display auto-resize / guest agent for the
 # detected hypervisor so the ARXOS desktop always fits the client window.
 # When a guest agent is present it owns resizing; the RandR fallback only runs
